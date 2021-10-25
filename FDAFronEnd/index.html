@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>FDA ingridiant to a reaction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+      #searchButton{
+        background-color: #b8d8f5;
+      }
+      body {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: large;
+          background-color: gainsboro;
+      }
+      #result{
+          list-style: none;
+          
+          background-color: white;
+      }
+      #title-row{
+        list-style: none;
+        border: 2px black solid;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>        
+    <form autocomplete="on" class="container">
+        <br>
+        <div class="row">
+          <input id="input" class="col" type="text" placeholder="Enter a reaction">
+          <button id="searchButton" class="col" type="button" onclick="ShowResults()">Search</button>
+        </div>         
+        
+        
+    </form>
+    <div class="container" id="result">
+      <div class="row" id="title-row">
+          <div class="col">ingridiant</div>
+          <div class="col">occurances</div>
+          <div class="col">pracentage among occurances</div>
+      </div>
+        
+    </div>
+   
+       <script src="app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
